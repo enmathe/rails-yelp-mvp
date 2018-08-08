@@ -1,0 +1,29 @@
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[31mF[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m
+
+Failures:
+
+  1) ReviewsController GET new assigns a new review as @review
+     [31mFailure/Error: get :new, params: { restaurant_id: @restaurant.id }, session: valid_session[0m
+     [31m[0m
+     [31mActionController::UnknownFormat:[0m
+     [31m  ReviewsController#new is missing a template for this request format and variant.[0m
+     [31m[0m
+     [31m  request.formats: ["text/html"][0m
+     [31m  request.variant: [][0m
+     [31m[0m
+     [31m  NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.[0m
+     [36m# ./spec/controllers/reviews_controller_spec.rb:35:in `block (3 levels) in <main>'[0m
+
+  2) ReviewsController POST create with invalid params re-renders the 'new' template
+     [31mFailure/Error: expect(response).to render_template("new")[0m
+     [31m  expecting <"new"> but was a redirect to <http://test.host/restaurants/1>[0m
+     [36m# ./spec/controllers/reviews_controller_spec.rb:69:in `block (4 levels) in <main>'[0m
+
+Finished in 0.36086 seconds (files took 4.8 seconds to load)
+[31m42 examples, 2 failures[0m
+
+Failed examples:
+
+[31mrspec ./spec/controllers/reviews_controller_spec.rb:34[0m [36m# ReviewsController GET new assigns a new review as @review[0m
+[31mrspec ./spec/controllers/reviews_controller_spec.rb:67[0m [36m# ReviewsController POST create with invalid params re-renders the 'new' template[0m
+

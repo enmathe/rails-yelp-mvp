@@ -12,29 +12,34 @@ Restaurant.destroy_all
 puts 'Creating restaurants...'
 restaurants_attributes = [
   {
-    name:         'Dishoom',
-    category:     'indian',
-    phone_number: 0251941596
+    name:         "Dishoom",
+    category:     "indian",
+    address:      "Avenue de la République",
+    phone_number: "0251941596"
   },
   {
-    name:         'Pizza East',
-    category:     'italian',
-    phone_number: 0251941594
-  }
+    name:         "Pizza Est",
+    category:     "italia",
+    address:      "Avenue de la République",
+    phone_number: "0251941594"
+  },
   {
-    name:         'DishDoom',
-    category:     'indian',
-    phone_number: 0251941595
-  }
+    name:         "DishDoo",
+    category:     "indian",
+    address:      "Avenue de la République",
+    phone_number: "0251941595"
+  },
   {
-    name:         'Pizza West',
-    category:     'italian',
-    phone_number: 0251941597
-  }
+    name:         "Pizza West",
+    category:     "italian",
+    address:      "Avenue de la République",
+    phone_number: "0251941597"
+  },
   {
-    name:         'Seum',
-    category:     'belgian',
-    phone_number: 0251941598
+    name:        "Seum",
+    category:     "belgian",
+    address:      "Avenue de la République",
+    phone_number: "0251941598"
   }
 ]
 Restaurant.create!(restaurants_attributes)
